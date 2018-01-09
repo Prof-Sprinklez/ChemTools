@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Chemistry Tools</title>
+		<script defer src="main.js"></script>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="icon" href="res/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id="svg">
+			<svg id="atom" width="24" height="24" viewBox="0 0 24 24">
+				<path d="M12,11A1,1 0 0,1 13,12A1,1 0 0,1 12,13A1,1 0 0,1 11,12A1,1 0 0,1 12,11M4.22,4.22C5.65,2.79 8.75,3.43 12,5.56C15.25,3.43 18.35,2.79 19.78,4.22C21.21,5.65 20.57,8.75 18.44,12C20.57,15.25 21.21,18.35 19.78,19.78C18.35,21.21 15.25,20.57 12,18.44C8.75,20.57 5.65,21.21 4.22,19.78C2.79,18.35 3.43,15.25 5.56,12C3.43,8.75 2.79,5.65 4.22,4.22M15.54,8.46C16.15,9.08 16.71,9.71 17.23,10.34C18.61,8.21 19.11,6.38 18.36,5.64C17.62,4.89 15.79,5.39 13.66,6.77C14.29,7.29 14.92,7.85 15.54,8.46M8.46,15.54C7.85,14.92 7.29,14.29 6.77,13.66C5.39,15.79 4.89,17.62 5.64,18.36C6.38,19.11 8.21,18.61 10.34,17.23C9.71,16.71 9.08,16.15 8.46,15.54M5.64,5.64C4.89,6.38 5.39,8.21 6.77,10.34C7.29,9.71 7.85,9.08 8.46,8.46C9.08,7.85 9.71,7.29 10.34,6.77C8.21,5.39 6.38,4.89 5.64,5.64M9.88,14.12C10.58,14.82 11.3,15.46 12,16.03C12.7,15.46 13.42,14.82 14.12,14.12C14.82,13.42 15.46,12.7 16.03,12C15.46,11.3 14.82,10.58 14.12,9.88C13.42,9.18 12.7,8.54 12,7.97C11.3,8.54 10.58,9.18 9.88,9.88C9.18,10.58 8.54,11.3 7.97,12C8.54,12.7 9.18,13.42 9.88,14.12M18.36,18.36C19.11,17.62 18.61,15.79 17.23,13.66C16.71,14.29 16.15,14.92 15.54,15.54C14.92,16.15 14.29,16.71 13.66,17.23C15.79,18.61 17.62,19.11 18.36,18.36Z" />
+			</svg>
+			<svg id="link" width="24" height="24" viewBox="0 0 24 24">
+				<path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+			</svg>
+		</div>
+		<div class="header">
+			<div class="vertical-align">
+				<div class="header-image icon"></div>
+				<span class="header-title">Chemistry Tools</span>
+				<span class="header-links ripples" id="header_links">Important Links</span>
+			</div>
+		</div>
+		<main class="body" id="main_body">
+			<div class="card" id="go_pdc">
+				<span class="card-title">Periodic Table</span>
+				<span class="card-desc">An interactive list of elements and some of their properties for use in pretty much everything</span>
+			</div>
+			<div class="card" id="go_mm">
+				<span class="card-title">Element Calculator</span>
+				<span class="card-desc">Enter a element or compound and find its molar mass or valence electrons</span>
+			</div>
+			<div class="card" id="go_vis">
+				<span class="card-title">Element Visualizer</span>
+				<span class="card-desc">An interactive, editable bohr model for any atom (even ones that don't exist)</span>
+			</div>
+			<div class="card" id="go_spell">
+				<span class="card-title">Element Speller</span>
+				<span class="card-desc">Spell out a word using only elements from the periodic table</span>
+			</div>
+			<span class="tutorials-title">Tutorials</span>
+			<div class="card" id="go_energy">
+				<span class="card-title">States of Matter</span>
+				<span class="card-desc">Learn how much energy is required for changing states visually</span>
+			</div>
+		</main>
+		<span class="footer">&#169; 2017 Nick McMurdie</span>
+		<div class="overlay" id="overlay">
+			<div class="menu-links">
+				<span class="menu-title">Important Links</span>
+				<div class="menu-body">
+					<a href="https://sites.google.com/a/pleasantonusd.net/apchemmelby/home" target="_blank" class="link" rel="noopener">Mr. Melby's Website</a>
+					<a href="https://login.cengage.com/cb" target="_blank" class="link" rel="noopener">Cengage Online (OWL)</a>
+					<a href="https://classroom.google.com/u/1/h" target="_blank" class="link" rel="noopener">Google Classroom</a>
+					<a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=cGxlYXNhbnRvbnVzZC5uZXR8YXBjaGVtbWVsYnl8Z3g6NjU3ZDVhOWU1MzY3YThiZg" target="_blank" class="link" rel="noopener">Equation Sheet</a>
+					<a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=cGxlYXNhbnRvbnVzZC5uZXR8YXBjaGVtbWVsYnl8Z3g6NzhlODVhY2RhMGQ4Mjkz" target="_blank" class="link" rel="noopener">Solubility Rules</a>
+					<a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=cGxlYXNhbnRvbnVzZC5uZXR8YXBjaGVtbWVsYnl8Z3g6NWUwODI3NDkxZTdiNWQ4YQ" target="_blank" class="link" rel="noopener">VSEPR Summary</a>
+				</div>
+				<div class="menu-footer">
+					<div class="menu-action ripples" id="link_close">CLOSE</div>
+				</div>
+			</div>
+		</div>
+		<div class="app" id="app_main">
+			<div class="app-body" id="app_body"></div>
+			<div class="app-header" id="app_header">
+				<span class="header-title app-title" id="app_title">No Title Found</span>
+				<div class="header-image app-close ripples" id="app_close">&#10005;</div>
+			</div>
+		</div>
+	</body>
+</html>
